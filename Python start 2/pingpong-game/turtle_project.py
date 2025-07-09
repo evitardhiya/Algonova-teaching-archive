@@ -1,0 +1,46 @@
+from turtle import*
+pensize(10)
+def background_sky():
+    color('sky blue')
+    penup()
+    goto(-200,200)
+    pendown()
+    begin_fill()
+    for i in range(2):
+        forward(400)
+        right(90)
+        forward(300)
+        right(90)
+    end_fill()
+
+def background_ground():
+    color('light green')
+    penup()
+    goto(-200,-100)
+    pendown()
+    begin_fill()
+    for i in range(2):
+        forward(400)
+        right(90)
+        forward(250)
+        right(90)
+    end_fill()
+
+def gunumg():
+    color('light grey')
+    penup()
+    goto(-200,-100)
+    pendown()
+    begin_fill()
+    left(90)
+    forward(80)
+    right(60)
+    forward(150)
+    right(60)
+    forward(300)
+    end_fill()
+speed (100)
+background_sky()
+background_ground()
+gunumg()
+exitonclick()
