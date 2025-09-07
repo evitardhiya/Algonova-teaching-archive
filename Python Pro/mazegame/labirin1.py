@@ -31,13 +31,13 @@ class Player(GameSprite):
 #Creating a window
 win_width = 700
 win_height = 500
-display.set_caption("Maze")
+display.set_caption("Maze Game")
 window = display.set_mode((win_width, win_height))
-back = transform.scale(image.load('back.jpg'), (700, 700))
+back = transform.scale(image.load('Python Pro/mazegame/back.jpg'), (700, 700))
 #back = (119, 210, 223)#setting the color according to the RGB color scheme
 
 #creating sprites
-packman = Player('hero.png', 5, win_height - 80, 80, 80, 0, 0)
+packman = Player('Python Pro/mazegame/hero.png', 5, win_height - 80, 80, 80, 0, 0)
 
 #game loop
 run = True
@@ -50,7 +50,6 @@ while run:
     for e in event.get():
         if e.type == QUIT:
             run = False
-
         elif e.type == KEYDOWN:
             if e.key == K_LEFT:
                 packman.x_speed = -10
@@ -74,5 +73,9 @@ while run:
     packman.reset()
     #turning on the movement
     packman.update()
-    
+
     display.update()
+
+
+
+

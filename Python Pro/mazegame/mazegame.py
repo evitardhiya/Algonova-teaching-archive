@@ -67,7 +67,6 @@ class Wall(sprite.Sprite):
     def draw_wall(self):
         draw.rect(window, (self.color_1, self.color_2, self.color_3), (self.rect.x, self.rect.y, self.width, self.height))
 
-' ' 'Game Description' ' '
 
 #Game scene:
 win_width = 700
